@@ -1,0 +1,10 @@
+gcc chall.c -o chall \
+    -no-pie \
+    -fno-stack-protector \
+    -Wl,-z,relro \
+    -Wl,-z,noexecstack \
+    -Wno-implicit-function-declaration \
+    -O0 -g
+
+
+docker compose up       
