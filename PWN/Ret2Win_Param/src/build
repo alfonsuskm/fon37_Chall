@@ -1,0 +1,6 @@
+gcc chall.c gadget.o -o chall \
+    -no-pie \
+    -fno-stack-protector \
+    -Wl,-z,norelro \
+    -Wl,-z,noexecstack \
+    -O0 -g
